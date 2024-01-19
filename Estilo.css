@@ -1,0 +1,161 @@
+body {
+    background-color: white;
+    margin: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+header {
+    background-color: #154c79;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px black;
+}
+
+img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.imgEdu {
+    height: 0vh;
+    padding: 0% 20% 0%;
+    border-radius: 0px;
+}
+
+.imgPr {
+    height: 0vh;
+    padding: 1% 70% 1%;
+    border-radius: 0px;
+}
+
+section {
+    background-color: rgb(30, 129, 176);
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 4px 2px 2px black;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+
+
+.educacion {
+    margin-left: 50%;
+}
+
+
+
+.proyectos {
+    margin-right: 50%;
+    align-items: center;
+}
+
+.tec table,
+th,
+td {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+.galeria {
+    font-family: 'ope sans';
+}
+
+.galeriamulti {
+    background-color: #154c79;
+}
+
+.linea {
+    border-top: 5px solid rgb(30, 129, 176);
+    margin-bottom: 40px;
+}
+
+.contenedorImg {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedorImg .imagen {
+    width: 32%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+}
+
+.imagen img {
+    border-radius: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background: rgba(0, 118, 192, 0.781);
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+    overflow: hidden;
+}
+
+.overlay h2 {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1000px) {
+    .contenedorImg {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .contenedorImg {
+        width: 90%;
+    }
+
+    .contenedorImg .imagen {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .contenedorImg {
+        width: 98%;
+    }
+
+    .contenedorImg .imagen {
+        width: 80%;
+    }
+}
